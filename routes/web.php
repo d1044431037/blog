@@ -23,5 +23,8 @@ Route::get('/users/{id}','App\Http\Controllers\UserController@show');
 
 Route::get('/posts/{post}/comments/{comment}',function($post,$comment){
   return "post $post , comments $comment";
-}
-);
+});
+
+##Route::get('/game1', function (){
+   # return view('game1');
+   Route::get('admin','App\Http\Controllers\SiteController@game');
