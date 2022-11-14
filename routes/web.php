@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('hello','App\Http\Controllers\Sitecontroller@hello');
+
+Route::get('/users/{id}','App\Http\Controllers\UserController@show');
+
+Route::get('/posts/{post}/comments/{comment}',function($post,$comment){
+  return "post $post , comments $comment";
+}
+);
