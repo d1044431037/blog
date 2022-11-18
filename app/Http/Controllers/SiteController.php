@@ -26,4 +26,18 @@ class SiteController extends Controller
     {
         return view('album');
     }
+    public function demo()
+    {
+        // return view('test.demo')->with (['name'=> '品爵','age' => '<b>18</b>']);
+        //第二種
+         $data = [];
+         $data ['name'] = '品爵';
+         $data ['age'] = '<b>19</b>';
+        return view('test.demo',$data);
+        //第三種
+        //  $name = '品爵';
+        //  $age = '<b>18</b>';
+        //  return view('test.demo', compact('name', 'age'));
+
+    }
 }

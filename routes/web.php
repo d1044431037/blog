@@ -30,3 +30,8 @@ Route::get('/posts/{post}/comments/{comment}', function ($post, $comment) {
 Route::get('game', 'App\Http\Controllers\SiteController@game');
 
 Route::get('admin', 'App\Http\Controllers\SiteController@album');
+
+Route::get('demo', 'App\Http\Controllers\SiteController@demo');
+
+//Route::resource('posts', 'App\Http\Controllers\PostController');
+Route::apiResource('posts', 'App\Http\Controllers\Api\PostController');
