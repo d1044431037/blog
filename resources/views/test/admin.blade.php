@@ -8,108 +8,52 @@ Twitter: https://twitter.com/supahfunk
 Codepen: https://codepen.io/supah/
 
 -->
-<div class="album">
-  @freach
-   <figure>
-    <img
+<div class="admin">
+
+
+  @foreach ($album as $item)
+  {<figure>
+  {$album =
+  <img
       src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80"
       alt="" />
-    <figcaption>Daytona Beach <small>United States</small></figcaption>
-  </figure>
-   <figure>
-    <img
+  <img
       src="https://images.unsplash.com/photo-1594532922286-e64d4ff4f14d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
-  </figure>
-  <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>
-      Bad Pyrmont <small>Deutschland</small>
-    </figcaption>
-  </figure>
-  <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1548391350-968f58dedaed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
-  </figure>
-  <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
       alt="" />
-    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
-  </figure>
-
-  <figure>
     <img
       src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1194&q=80"
       alt="" />
-    <figcaption>Highlands <small>United States</small></figcaption>
-  </figure>
-  <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1495539406979-bf61750d38ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Daytona Beach <small>United States</small></figcaption>
-  </figure>
-  <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1515446134809-993c501ca304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
-  </figure>
-  <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1484278786775-527ac0d0b608?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80"
       alt="" />
-    <figcaption>
-      Bad Pyrmont <small>Deutschland</small>
-    </figcaption>
-  </figure>
-  <figure>
     <img
       src="https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Yellowstone National Park <small>United States</small></figcaption>
-  </figure>
-
-<!-- Explanation in JS tab -->
-
-<!-- The two texts -->
-<div id="container">
-	<span id="text1"></span>
-	<span id="text2"></span>
-</div>
-
-<!-- The SVG filter used to create the merging effect -->
-<svg id="filters">
-	<defs>
-		<filter id="threshold">
-			<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-			<feColorMatrix in="SourceGraphic"
-					type="matrix"
-					values="1 0 0 0 0
-									0 1 0 0 0
-									0 0 1 0 0
-									0 0 0 255 -140" />
-		</filter>
-	</defs>
-</svg>
-  <figure>
     <img
       src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Quiraing, Portree <small>United Kingdom</small></figcaption>
-  </figure>
-   <figure>
-    <img
+   <img
       src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
       alt="" />
-    <figcaption>Highlands <small>United States</small></figcaption>
+    }
   </figure>
+  }
+  @endforeach
  </div>
 
 

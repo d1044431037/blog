@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
+use function GuzzleHttp\Promise\task;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+      view()->share('global',11);
+      View()->composer(['layouts.master'],function($view){
+       $view->with('multi','多視圖變數');
+      });
     }
 }

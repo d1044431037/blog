@@ -29,17 +29,20 @@ Route::get('/posts/{post}/comments/{comment}', function ($post, $comment) {
 # return view('game1');
 Route::get('index', 'App\Http\Controllers\SiteController@game');
 
-Route::get('admin', 'App\Http\Controllers\SiteController@album');
+Route::get('album', 'App\Http\Controllers\SiteController@album');
 
 Route::get('demo', 'App\Http\Controllers\SiteController@demo');
 
 //Route::resource('posts', 'App\Http\Controllers\PostController');
 Route::apiResource('posts', 'App\Http\Controllers\Api\PostController');
 
+Route::get('admin', 'App\Http\Controllers\SiteController@admin');
+
+Route::get('master', 'App\Http\Controllers\SiteController@master');
 // Route::namespace ('App\Http\Controllers')->group(function (){
 //     Route::get('/hello', 'SiteController@hello');
 //     Route::get('/users/{id?}', 'UserController@show');
 //     Route::get('admin', 'SiteController@dashboard');
 //     Route::get('album', 'SiteController@gallery');
 //     Route::get('album2','SiteController@gallery2');
-// }) ;
+//

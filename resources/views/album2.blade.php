@@ -10,6 +10,8 @@ Codepen: https://codepen.io/supah/
 -->
 <div class="album">
   @yield('route')
+
+  {{$global}}
   <figure>
     <img
       src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80"
@@ -17,7 +19,7 @@ Codepen: https://codepen.io/supah/
     <figcaption>Daytona Beach <small>United States</small></figcaption>
   </figure>
   @yield('route2')
-{{$global}}
+
 
   <figure>
     <img
@@ -82,30 +84,10 @@ Codepen: https://codepen.io/supah/
       alt="" />
     <figcaption>Yellowstone National Park <small>United States</small></figcaption>
   </figure>
-   @section('tour')
 <!-- Explanation in JS tab -->
 
-<!-- The two texts -->
-<div id="container">
-	<span id="text1"></span>
-	<span id="text2"></span>
-</div>
 
-<!-- The SVG filter used to create the merging effect -->
-<svg id="filters">
-	<defs>
-		<filter id="threshold">
-			<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-			<feColorMatrix in="SourceGraphic"
-					type="matrix"
-					values="1 0 0 0 0
-									0 1 0 0 0
-									0 0 1 0 0
-									0 0 0 255 -140" />
-		</filter>
-	</defs>
-</svg>
-@show
+
   <figure>
     <img
       src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
