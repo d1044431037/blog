@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 class SiteController extends Controller
 {
@@ -34,8 +35,8 @@ class SiteController extends Controller
     {
         return view('layouts.master');
     }
-     public function demo()
-     {
+     public function demo(Request $request)
+     { return $request->all();
         // return view('test.demo')->with (['name'=> '品爵','age' => '<b>18</b>']);
         //第二種
         //  $data = [];
@@ -43,8 +44,8 @@ class SiteController extends Controller
         //  $data ['age'] = '<b>19</b>';
         // return view('test.demo',$data);
         //第三種
-         $name = '品爵';
-         $age = '<b>18</b>';
-         return view('test.demo', compact('name', 'age'));
+        //  $name = '品爵';
+        //  $age = '<b>18</b>';
+        //  return view('test.demo', compact('name', 'age'));
      }
     }

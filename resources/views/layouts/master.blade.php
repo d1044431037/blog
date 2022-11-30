@@ -26,7 +26,8 @@ Codepen: https://codepen.io/supah/
     <figcaption>Териберка, gorod Severomorsk <small>Russia</small></figcaption>
   </figure>
   @section('tour')
-
+Route::post('/post',function(Request $request){
+  return $request->all();
 
   @show
   <figure>
